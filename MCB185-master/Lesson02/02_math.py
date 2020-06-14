@@ -2,12 +2,12 @@
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # The typical mathematical operators behave as expected
 # Try changing a and b
 # Make sure you try b = 0 so you can observe the error
-
+"""
 a = 4
 b = 3
 
@@ -55,13 +55,22 @@ print(math.e, math.ceil(math.e))
 print(math.inf, math.nan)
 
 # Stirling's approximation of the log factorial
+####notes!
+#striling's approximation of the log is the following formula
+#log n! = nlogn - n
+#full formula =
+#log(n!) = nlogn − n + 1/2*log n + 1/2*log(2π) + εn,
+#math.tau = 2pi ~= 6.28
+
 # Notice the use of \ to split a long line
 # Try experimenting with n, including non-integer values
 
 n = 5
 lnfac = 0.5 * math.log(math.tau) + (n + 0.5) * math.log(n) \
 	- n + 1/(12 * n) - 1 / (360 * (n**3))
-print(n, math.e**lnfac)
+
+shortversion = n*math.log(n)-n
+print(n, math.e**lnfac, shortversion)
 print(math.factorial(n))
 
 """

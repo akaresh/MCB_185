@@ -5,6 +5,28 @@
 # Skip AA, CC etc.
 # Also print out how many combinations there are
 
+all_of_the_aa = ['A', 'C', 'D', 'E', 'F', 'G', 'H',
+                 'I', 'K', 'L', 'M', 'N', 'P', 'Q',
+                 'R', 'S', 'T', 'V', 'W', 'Y']
+
+#print(all_of_the_aa)
+container = []
+
+for i in range(len(all_of_the_aa)):
+
+    for j in range(i, len(all_of_the_aa)):
+
+        if ((all_of_the_aa[i]+all_of_the_aa[j]) not in container and
+            all_of_the_aa[i]!=all_of_the_aa[j]):
+
+            add = ((all_of_the_aa[i])+(all_of_the_aa[j]))
+            #print('add', add)
+            container.append(add)
+            #print('c', container)
+        else:
+            pass
+print(container)
+print(len(container))
 
 """
 python3 aa_pairs.py

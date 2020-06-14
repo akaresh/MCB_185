@@ -20,10 +20,11 @@ print(s)
 # Move the triple quotes downward to uncover each line of code
 # That's how all the rest of the tutorial programs work
 
-"""
+
 
 # You can replace the contents of a variable easily
 
+"""
 s = 'yo'
 print(s)
 
@@ -49,8 +50,8 @@ print(type(c))
 # The float() function converts integers and strings to floats
 # The str() function converts integers and floats to strings
 
-print(a + int(b) + int(c))
-print(float(a) + b + float(c))
+#print(a + int(b) + int(c))
+#print(float(a) + b + float(c))
 print(str(a) + str(b) + c)
 
 # Note that print() can take more than one argument separated by commas

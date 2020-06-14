@@ -2,10 +2,10 @@
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # Variables with text are called strings
-
+"""
 s = 'ACGT' # a string
 
 # Square brackets let you access sub-strings as 'slices'
@@ -13,7 +13,7 @@ s = 'ACGT' # a string
 # The first number before : is the starting index
 # The second number : is one larger than the last index
 
-print(s, s[0], s[1])
+print(s, s[0], s[1], s[2], s[3])
 print(s[2], s[2:3], s[2:4], s[2:5])
 
 # You can also do the following shortcuts

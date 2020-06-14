@@ -4,13 +4,13 @@ import math
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # The 'for' loop the most common loop construct you will use
 # Note the indentation of the print(i) statement
 # Code 'inside' loops must be indented
 # Note that Python starts counting from 0 not 1
-
+"""
 for i in range(3):
 	print(i)
 print('-')
