@@ -7,7 +7,17 @@
 
 n = 5
 
+#print(sum(range(n+1)))
 
+
+#factorial formula
+sump = 0
+product = 1
+for i in range(1, n+1):
+    sump += i
+    product *= i
+
+print('sum:', sump, 'factorial:', product)
 """
 python3 sumfac.py
 5 15 120
