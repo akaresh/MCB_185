@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-
+"""
 import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # The standard conditional statement is a single 'if'
 
@@ -80,7 +80,8 @@ while (True): # this loop runs forever
 # The `continue` statement allows you to skip to the next iteration
 
 for i in range(10):
-	if i < 5: continue # this skips ahead to next iteration
+	if i < 5:
+		continue # this skips ahead to next iteration
 	print('continue', i)
 
 
