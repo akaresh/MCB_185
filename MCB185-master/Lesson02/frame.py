@@ -7,6 +7,22 @@
 dna = 'ATGGCCTTT'
 
 
+###single loop
+n = int(len(dna)/3)
+frame = list(range(3))*n
+
+for a in range(0, len(dna)):
+    print(a, frame[a], dna[a])
+
+
+###nested loop
+x = 0
+for i in range (0, len(dna), 3):
+    for j in range(0, 3):
+        print(i, j, dna[i])
+        i+=1
+        #break
+
 """
 python3 frame.py
 0 0 A
@@ -19,3 +35,4 @@ python3 frame.py
 7 1 T
 8 2 T
 """
+

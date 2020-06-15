@@ -49,13 +49,14 @@ print('------')
 
 # Everything that is tabbed-over is within the same loop
 # Try removing the tab in front of i += 1 below
-
+"""
 i = 0
+s = 'ACGT'
 for c in s:
 	print(i, c)
 	i += 1
 print('-------')
-
+"""
 # The real power begins with loops inside of loops
 
 for i in range(0, 4):
