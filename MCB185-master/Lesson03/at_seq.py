@@ -16,16 +16,16 @@ for i in range(length):
     r = random.randint(1, 4) # generate a random number from 1 to 4
     if   r == 1:
         dna += 'A'
+        content += 1
     elif r == 2:
         dna +='C'
     elif r == 3:
         dna += 'G'
     elif r == 4:
         dna += 'T'
-    if (dna[i-1]+dna[i]) == 'AT':
-        content +=2
+        content += 1
 
-print(length, dna, content, (content/length)*100)
+print(length, dna, content, (content/length))
 
 
 

@@ -6,7 +6,9 @@
 
 dna = 'ACAGAGCCAGCAGATATACAGCAGATACTAT' # feel free to change
 
-
+i = 0
+for base in dna:
+    if
 """
 python3 gc.py
 0.42
