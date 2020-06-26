@@ -8,15 +8,36 @@
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
 
+#gc_content = [0]
+
+for i in range(len(seq)):
+    stripped = seq[i:i+w]
+    if len(stripped) == 11:
+        gc_content = 0
+        for j in range(len(stripped)):
+            if stripped[j] == 'C' or stripped[j] == 'G':
+                gc_content += 1
+            else:
+                continue
+        print(i, stripped, f'{gc_content/11:.4f}')
+    else:
+        break
+
+#print(i, stripped, f'{gc_content/11:.4f}')
+
+
+
+
+"""
 list_of_all = []
 gc_content = []
 
-for i in range(0, len(seq)):
-    stripped = seq[i: i+w]
+for i in range(len(seq)):
+    stripped = seq[i:i+w]
     if len(stripped) == 11:
         list_of_all.append(stripped)
     else:
-        pass
+        break
 
 
 for i in range(len(list_of_all)):
@@ -26,7 +47,7 @@ for i in range(len(list_of_all)):
             gc_content[i] += 1
 
     print(i, list_of_all[i], f'{gc_content[i]/11:.4f}')
-
+"""
 
 
 '''
