@@ -23,44 +23,6 @@ for i in range(len(seq)):
     else:
         break
 
-#print(i, stripped, f'{gc_content/11:.4f}')
-
-
-
-
-"""
-list_of_all = []
-gc_content = []
-
-for i in range(len(seq)):
-    stripped = seq[i:i+w]
-    if len(stripped) == 11:
-        list_of_all.append(stripped)
-    else:
-        break
-
-
-for i in range(len(list_of_all)):
-    gc_content.append(0)
-    for j in range(len(list_of_all[i])):
-        if list_of_all[i][j] == 'C' or list_of_all[i][j] == 'G':
-            gc_content[i] += 1
-
-    print(i, list_of_all[i], f'{gc_content[i]/11:.4f}')
-"""
-
-
-'''
-for j in range(len(seq)):
-    num_of_gc = 0
-    for i in range(len(seq[j:j+w])):
-        if seq[i] == 'C' or seq[i] == 'G':
-            num_of_gc += 1
-        else:
-            pass
-print(j, seq[j:j+w],num_of_gc)
-'''
-
 
 """
 python3 gc_win.py
