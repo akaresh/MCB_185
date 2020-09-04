@@ -11,6 +11,23 @@
 seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
 
+window_seq = seq[:w]
+
+f = 0
+
+for i in range(len(seq)):
+
+    if len(seq[i:w+i]) == 11:
+        gc_content = 0
+
+        for base in (seq[i:w+i]):
+            if base == 'C' or base == 'G':
+                gc_content += 1
+            else:
+                pass
+        print(f, seq[i:w+i], f'{gc_content/11:.4f}')
+        f += 1
+
 
 """
 python3 gc_win2.py
