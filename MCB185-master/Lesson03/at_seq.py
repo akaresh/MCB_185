@@ -25,7 +25,7 @@ for i in range(length):
         dna += 'T'
         content += 1
 
-print(length, dna, content, (content/length))
+print(length, (content/length), dna)
 
 
 
