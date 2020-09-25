@@ -7,6 +7,13 @@
 # Command line:
 #	python3 xcoverage.py <genome size> <x>
 
+import sys
+genome_size = int(sys.argv[1])
+X = int(sys.argv[2])
+
+
+
+
 
 """
 python3 xcoverage.py 1000 5

@@ -5,14 +5,14 @@ import random
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # Sometimes we want to work with multiple variables at the same time
 # A convenient way to do this is a 'tuple'
 # Any time you have comma separated values, you have a 'tuple'
 # Tuples are often in parentheses but need not be
 # Tuples can mix data types
-
+"""
 tup = 1, 2.0, 'three'
 tup = (1, 2.0, 'three') # same thing
 
@@ -51,7 +51,7 @@ last = lis.pop() # removes the last element of a list and returns it
 print(last, lis)
 
 lis.insert(2, 'ok')  # inserts 'ok' at position 2
-print(list)
+print(lis)
 
 # Many lists contain numbers, like the following probability distribution
 

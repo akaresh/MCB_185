@@ -16,8 +16,6 @@ for a in range(0, len(dna)):
     print(a, frame[a], dna[a])
 
 print("single loop v2")
-
-
 for a in range(0, len(dna)):
     n = a%3
     print(a, frame[n], dna[a])

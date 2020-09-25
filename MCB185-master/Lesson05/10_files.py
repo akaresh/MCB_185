@@ -2,8 +2,8 @@
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
 
+"""
 # The most common way to get data into a program is by reading a file
 # Before reading a file you must open it first
 # open() associates a file with a 'file pointer' variable
@@ -42,6 +42,7 @@ with open('numbers.txt') as fp:
 		if line[0] != '#':
 			numbers.append(float(line))
 print(numbers)
+
 
 # Biological data files can be immense, and are often compressed with gzip
 # You can read from compressed files directly without uncompressing them

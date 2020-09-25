@@ -4,8 +4,8 @@ import time
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
 
+"""
 # Previously, we have used the 'in' keyword for iterating over sequences
 
 for c in 'ACGT': print(c)                    # strings are sequences of letters

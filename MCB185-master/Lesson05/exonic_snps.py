@@ -13,7 +13,73 @@
 #	Estimate how long your program would take to run using all available data
 
 
+
+import gzip
+import sys
+
+#snps.txt.gz
+#exons.txt.gz
+#match both of them
+snps = []
+with gzip.open('snps.txt.gz', 'rt') as fp:
+    #print(fp.read())
+    for line in fp.readlines():
+        l = line.split('\t')
+        snps.append(l[2])
+
+#print(len(snps[0]), snps[0])
+
+for position_of_snp in snps:
+    print(position_of_snp, len(position_of_snp))
+#for i in snps:
+    #print (i)
+
+exons = {} ### change the way you store
+all_genes = []
+with gzip.open('exons.txt.gz', 'rt') as ep:
+    #print(ep.read())
+    for line in ep.readlines():
+        l = line.split('\t')
+        #exons.append(l)
+        exons[l[0]] = [l[2],l[3].replace('\n', '')]
+        if l[0] in all_genes:
+            pass
+        else:
+            all_genes.append(l[0])
+
+print(len(exons))
+print(exons)
+
+
+genes_w_snps = 0
+gene_list_name = []
+
+for position_of_snp in snps:
+
+    for gene, exon_locations in exons.items():
+
+        print(int(position_of_snp), len(position_of_snp))
+        print(exon_locations[0], len(exon_locations[0]))
+        print(int(exon_locations[1]), len(exon_locations[1]))
+        if int(exon_locations[0]) <= int(position_of_snp):
+            print('-----')
+        if int(position_of_snp) <= int(exon_locations[1]):
+            #gene_list_name.appen('////')
+            print('////')
+        if int(exon_locations[0]) <= int(position_of_snp) and int(position_of_snp) <= int(exon_locations[1]):
+
+            #print(gene)
+            gene_list_name.append(gene)
+        #print(gene, exon_locations[0], exon_locations[1])
+print(gene_list_name)
+
 """
+print('SNPs:', len(snps))
+print('Genes:', len(all_genes))
+print('Exons:', len(exons))
+print('Genes w/ SNPs:', gens_w_snps)
+print('Gene List:', gene_list_name)
+
 SNPs: 8607
 Genes: 234
 Exons: 2433

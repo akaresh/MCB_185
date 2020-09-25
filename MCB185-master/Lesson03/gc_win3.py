@@ -10,6 +10,18 @@ seq = 'ACGACGCAGGAGGAGAGTTTCAGAGATCACGAATACATCCATATTACCCAGAGAGAG'
 w = 11
 s = 5
 
+for i in range(0, len(seq), s):
+    stripped = seq[i:i+w]
+    if len(stripped) == 11:
+        gc_content = 0
+        for j in range(len(stripped)):
+            if stripped[j] == 'C' or stripped[j] == 'G':
+                gc_content += 1
+            else:
+                continue
+        print(i, stripped, f'{gc_content/11:.4f}')
+    else:
+        break
 
 """
 python3 gc_win3.py

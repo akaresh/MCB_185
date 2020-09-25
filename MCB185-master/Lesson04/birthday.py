@@ -9,10 +9,34 @@
 # Use assert() to check parameters
 # On the command line:
 #	python3 birthday.py <bins> <trials> <people>
+from math import factorial
+import random
+import sys
 
+
+days = int(sys.argv[1])
+trials = int(sys.argv[2])
+people = int(sys.argv[3])
+birthdays = []
+probabilities = []
+for i in range(trials):
+    for x in range(people):
+        birthdays.append(random.randint(1, days))
+    if x in birthdays:
+        probability = factorial(days)/(days**people*factorial(days-people))
+        probabilities.append(probability)
+    else:
+        continue
+print(birthdays)
+#print(probabilities)
+total = sum(probabilities)/len(probabilities)
+
+print(total)
 
 """
 python3 birthday.py 365 1000 23
 0.520
 """
+
+###two people having the same birthday
 

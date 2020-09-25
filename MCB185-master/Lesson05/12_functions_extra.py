@@ -29,6 +29,7 @@ fun2()
 fun2(age=50)
 fun2(name='Rory')
 fun2('Elite', 1337)
+
 # fun2('foo', 1, name='bar') # but this is an error
 
 # You can also specify a function with a variable number arguments
@@ -58,10 +59,14 @@ def randseq(count, length):
 		chars = []
 		for j in range(length):
 			r = random.randint(0,3)
-			if   r == 0: chars.append('A')
-			elif r == 1: chars.append('C')
-			elif r == 2: chars.append('G')
-			else:        chars.append('T')
+			if   r == 0:
+				chars.append('A')
+			elif r == 1:
+				chars.append('C')
+			elif r == 2:
+				chars.append('G')
+			else:
+				chars.append('T')
 		seqs.append(''.join(chars))
 	return seqs
 

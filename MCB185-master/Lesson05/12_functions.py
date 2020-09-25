@@ -4,7 +4,7 @@ import math
 
 # Move the triple quotes downward to uncover each segment of code
 
-"""
+
 
 # We have been using functions for a while, such as print(list)
 # Sometimes the variable preceeds the function, such as list.append()
@@ -77,7 +77,7 @@ def min_max(values):
 print(min_max(data))
 
 
-
+"""
 # Here's a really useful function for reading fasta files
 # Some parts of the following code may be unfamiliar, don't stress about it!
 # Just copy-paste read_fasta into the top of your program
@@ -89,7 +89,7 @@ import sys
 def read_fasta(filename):
 	name = None
 	seqs = []
-	
+
 	fp = None
 	if filename == '-':
 		fp = sys.stdin

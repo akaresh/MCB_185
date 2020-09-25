@@ -25,7 +25,7 @@ print(fp.readline())
 fp.close()
 
 #fp = open('/tmp/foo', 'x') # open for writing, will not overwrite
-#fp.write('new file!\n') 
+#fp.write('new file!\n')
 #fp.close()
 
 fp = open('/tmp/foo', 'w') # open for writing
